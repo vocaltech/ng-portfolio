@@ -1,5 +1,6 @@
 import { NgFor,NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+
 import { Title } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'
 import { CollapseModule } from 'ngx-bootstrap/collapse';
@@ -7,6 +8,8 @@ import { ProjectCardComponent } from '../project-card/project-card.component';
 import { Project } from '../_models/Project';
 import { ProjectService } from '../_services/project.service';
 import { Tag } from '../_models/Tag';
+
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-portfolio',
@@ -24,7 +27,7 @@ export class PortfolioComponent implements OnInit {
   isCollapsed: boolean = true
   filterTags = [] as Tag[]
 
-  constructor(private titleService: Title, private projectService: ProjectService) {
+  constructor(private titleService: Title, private projectService: ProjectService, private router: Router) {
     this.titleService.setTitle("Vocaltech - Portfolio")
   }
 
@@ -72,5 +75,15 @@ export class PortfolioComponent implements OnInit {
 
   onClickResetLink = () => {
     this.filterTags = []
+
+    // refresh current page
+    this.reloadCurrentRoute()
+  }
+
+  reloadCurrentRoute() {
+    const currentUrl = this.router.url;
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+      this.router.navigate([currentUrl]);
+    });
   }
 }
