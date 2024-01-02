@@ -1,1 +1,54 @@
-<p>resume works!</p>
+<div class="container">
+    <button class="btn btn-primary shadow border mb-5" (click)="downloadPdfResume()">T&eacute;l&eacute;charger au format PDF</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" [closeOthers]=true class="shadow">
+            <accordion-group panelClass="customClass" [(isOpen)]="isWorkExperienceAccordionOpened">
+                <button
+                    id="panel-heading"
+                    class="btn btn-link btn-block justify-content-between d-flex w-100  shadow-none"
+                    accordion-heading
+                    type="button">
+                    <div class="pull-left float-left">Experiences pro</div>
+                    <!--<span class="badge badge-secondary bg-secondary float-right pull-right">Some HTML here</span>-->
+                    <span style="color: white;" *ngIf="!isWorkExperienceAccordionOpened">></span>
+                    <span style="color: white;" *ngIf="isWorkExperienceAccordionOpened">v</span>
+                </button>
+    
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Eng.</h2>
+                    <h3 class="text-primary">Valoris Inc</h3>
+                    <ul>
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
+                        <li>, when an unknown printer took a galley of type</li> 
+                        <li>and scrambled it to make a type specimen book.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Manager.</h2>
+                    <h3 class="text-primary">Atos Inc</h3>
+                    <ul>
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
+                        <li>, when an unknown printer took a galley of type</li> 
+                        <li>and scrambled it to make a type specimen book.</li>
+                    </ul>
+                </div>
+            </accordion-group>
+    
+            <accordion-group panelClass="customClass">
+                <button
+                id="panel-heading"
+                class="btn btn-link btn-block justify-content-between d-flex w-100  shadow-none"
+                accordion-heading type="button">
+                <div class="pull-left float-left">Education</div>
+                <span class="badge badge-secondary bg-secondary float-right pull-right">Some HTML here</span>
+                <!--<span class="glyphicon glyphicon-chevron-up float-right pull-right"></span>-->
+            </button>
+            This is just some content to illustrate fancy headings.
+            </accordion-group>
+        </accordion>
+    </div>
+</div>
