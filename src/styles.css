@@ -12,3 +12,16 @@
     color: white;
     background-color: blue;
 }
+
+.panel.customClass {
+    width: 100%;
+    /*
+    background-color: greenyellow;
+    color: #fff;
+    */
+}
+
+#panel-heading.btn {
+    text-decoration: none;
+}
+
