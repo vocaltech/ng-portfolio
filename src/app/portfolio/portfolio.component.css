@@ -1,0 +1,9 @@
+.reset_link {
+    text-decoration: none;
+    color: gray;
+}
+
+.reset_link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
