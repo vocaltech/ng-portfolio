@@ -2,7 +2,7 @@
     <button class="btn btn-primary shadow border mb-5" (click)="downloadPdfResume()">T&eacute;l&eacute;charger au format PDF</button>
 
     <div class="pb-2">
-        <accordion [isAnimated]="true" [closeOthers]=true class="shadow">
+        <accordion [isAnimated]="true" [closeOthers]="true" class="shadow">
             <accordion-group panelClass="customClass" [(isOpen)]="isWorkExperienceAccordionOpened">
                 <button
                     id="panel-heading"
@@ -11,8 +11,16 @@
                     type="button">
                     <div class="pull-left float-left">Experiences pro</div>
                     <!--<span class="badge badge-secondary bg-secondary float-right pull-right">Some HTML here</span>-->
-                    <span style="color: white;" *ngIf="!isWorkExperienceAccordionOpened">></span>
-                    <span style="color: white;" *ngIf="isWorkExperienceAccordionOpened">v</span>
+                    <span style="color: white;" *ngIf="!isWorkExperienceAccordionOpened">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z" fill="white"/>
+                        </svg>
+                    </span>
+                    <span style="color: white;" *ngIf="isWorkExperienceAccordionOpened">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path d="m296-345-56-56 240-240 240 240-56 56-184-184-184 184Z" fill="white"/>
+                        </svg>
+                    </span>
                 </button>
     
                 <div style="text-align: left;">
