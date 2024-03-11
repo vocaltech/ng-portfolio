@@ -4,13 +4,15 @@ import { ProjectService } from '../_services/project.service';
 import { Project } from '../_models/Project';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NgFor } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     CarouselModule,
-    NgFor
+    NgFor,
+    RouterLink
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
