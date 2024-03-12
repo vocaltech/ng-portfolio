@@ -3,10 +3,12 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
+import { SkillsComponent } from './skills/skills.component';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'portfolio', component: PortfolioComponent },
+    { path: 'skills', component: SkillsComponent },
     { path: 'resume', component: ResumeComponent },
     { path: 'contact', component: ContactComponent },
     { path: '**', component: HomeComponent, pathMatch: 'full' }
