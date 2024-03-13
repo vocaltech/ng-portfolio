@@ -25,6 +25,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.featuredProject = this.projectService.findProjectById(5)
+    this.featuredProject = this.projectService.findProjectById(0)
   }
 }
