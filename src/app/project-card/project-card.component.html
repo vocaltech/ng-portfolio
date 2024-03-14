@@ -1,7 +1,8 @@
 <div class="card shadow text-center" style="max-width: 350px; min-width: 350px;">
     <div class="card-body">
         <h5 class="card-title">{{project.name}}</h5>
-        <p class="card-text">{{project.summary}}</p>
+        <p class="card-text" [innerHTML]="project.summary | safeHtml">{{project.summary}}</p>
+
         <button class="btn btn-primary" (click)="openProjectModal()">View more</button>
     </div>
     <div class="card-footer">
