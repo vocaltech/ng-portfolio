@@ -3,11 +3,15 @@ import { Project } from '../_models/Project';
 import { NgFor } from '@angular/common';
 import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { ProjectModalComponent } from '../project-modal/project-modal.component';
+import { SafeHtmlPipe } from '../_pipes/safehtml.pipe';
 
 @Component({
   selector: 'app-project-card',
   standalone: true,
-  imports: [NgFor],
+  imports: [
+    NgFor,
+    SafeHtmlPipe
+  ],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.css'
 })
