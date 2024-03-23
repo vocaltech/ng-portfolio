@@ -10,12 +10,15 @@
         </div>
     </carousel>
 
-    <h3 class="mt-2">Description</h3>
-    <p>{{project.description}}</p>
-    <div [innerHTML]="project.description | safeHtml"></div>
-    <p><a href="{{project.projectLink}}" target="_blank">Github source</a></p>
-
+    <h4 class="mt-4">Description</h4>
     <hr>
+    <p>{{project.summary}}</p>
+
+    <div [innerHTML]="project.description | safeHtml"></div>
+    <p class="mt-3"><a href="{{project.projectLink}}" target="_blank">Github source</a></p>
+</div>
+
+<div class="modal-footer justify-content-center">
     <div class="d-flex flex-wrap">
         <div *ngFor="let tag of project.tags">
             <div class="tag me-2 mb-1" [style.background-color]="tag.color">{{tag.toString()}}</div>
