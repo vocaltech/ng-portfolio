@@ -8,4 +8,5 @@ export interface Project {
     projectLink: string;
     pictures: string[];
     tags: Tag[];
+    livedemoLink: string;
 }
