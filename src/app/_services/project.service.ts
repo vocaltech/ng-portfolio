@@ -12,6 +12,7 @@ export class ProjectService {
       name: "Android Geolocation App", 
       pictures: ["../../assets/android_geolocation/screenshot-initial.png", "../../assets/android_geolocation/screenshot-pos-1.png", "../../assets/android_geolocation/screenshot-pos-2.png", "../../assets/android_geolocation/location-dev.png"], 
       projectLink: "//www.github.com", 
+      livedemoLink: "",
       summary: "Mobile app to visualize real-time location on a map, send and retrieve datas from a remote server.", 
       description: 
         `
@@ -30,6 +31,7 @@ export class ProjectService {
       name: "Spring Boot Geolocation API", 
       pictures: ["../../assets/spring-geolocation/swagger-ui.png","../../assets/spring-geolocation/mongodb-compass.png","../../assets/spring-geolocation/rabbitmq-admin-1.png", "../../assets/spring-geolocation/rabbitmq-admin-2.png", "../../assets/spring-geolocation/rabbitmq-admin-3.png"], 
       projectLink: "//www.github.com", 
+      livedemoLink: "",
       summary: "Backend for Android Geolocation App. Restful API for retrieving and deleting user positions.", 
       description: 
         `
@@ -46,20 +48,49 @@ export class ProjectService {
     {
       id: 2, 
       name: "Angular Dashboard", 
-      pictures: ["../../assets/image_1.png","../../assets/image_2.png","../../assets/image_3.png"], 
+      pictures: ["../../assets/ng-dashboard/screenshot-1.png","../../assets/ng-dashboard/screenshot-2.png","../../assets/ng-dashboard/screenshot-3.png"], 
       projectLink: "//www.github.com", 
-      summary: "Dashboard web app developed using Angular", 
+      livedemoLink: "https://ngdashboard.vocaltech.fr/",
+      summary: "Responsive Dashboard for an e-commerce website built with Angular and Material UI component library.", 
       description: 
         `
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <h5>Key features</h5>\
+          <ul type='square'>\
+          <li><b>E-commerce Dashboard Frontend:&nbsp;</b>The dashboard offers a user-friendly interface designed to manage online store efficiently.&nbsp;It provides functionalities for order processing, customer management, and more, all accessible from a centralized location.</li>\
+          <li><b>Dashboard Analytics:&nbsp;</b>The analytics module delivers comprehensive insights into key metrics and performance indicators crucial for decision-making. The store owner is able to track information such as where customers come from to their online store, how their products sell, how traffic sources relate to sales, among other things.</li>\
+          </ul>
         `, 
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
     {
-      id: 3, name: "Fullstack Web Crawler", pictures: ["../../assets/image_1.png","../../assets/image_2.png","../../assets/image_3.png"], projectLink: "//www.github.com", summary: "Fullstack web app developed using Angular and Node.js", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", tags: [Tag.ANGULAR, Tag.NODEJS, Tag.JAVASCRIPT]},
+      id: 3, 
+      name: "Fullstack Web Crawler", 
+      pictures: ["../../assets/image_1.png","../../assets/image_2.png","../../assets/image_3.png"], 
+      projectLink: "//www.github.com", 
+      livedemoLink: "",
+      summary: "Fullstack web app developed using Angular and Node.js", 
+      description: 
+        `
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        `
+     , 
+      tags: [Tag.ANGULAR, Tag.NODEJS, Tag.JAVASCRIPT]},
     {
-      id: 4, name: "Android Streaming App", pictures: ["../../assets/android-streaming/screenshot-all-reduce.jpg", "../../assets/android-streaming/streaming-dev.png"], projectLink: "//www.github.com", summary: "Mobile app to playback an audio stream from url.", description: "<h2 style='color: red;'>Lorem ipsum</h2> dolor sit amet<br>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", tags: [Tag.ANDROID, Tag.KOTLIN]},
+      id: 4, 
+      name: "Android Streaming App", 
+      pictures: ["../../assets/android-streaming/screenshot-all-reduce.jpg", "../../assets/android-streaming/streaming-dev.png"], 
+      projectLink: "//www.github.com", summary: "Mobile app to playback an audio stream from url.", 
+      livedemoLink: "",
+      description: "<h2 style='color: red;'>Lorem ipsum</h2> dolor sit amet<br>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+      tags: [Tag.ANDROID, Tag.KOTLIN]},
     {
-      id: 5, name: "Fullstack Media Player", pictures: ["../../assets/spring-webscraper-streaming/swagger-ui.png","../../assets/spring-webscraper-streaming/mongo-db.png"], projectLink: "//github.com/vocaltech/android-streaming", summary: "Fullstack web app developed using Angular and Spring Boot", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", tags: [Tag.ANGULAR, Tag.JAVA, Tag.TYPESCRIPT]}
+      id: 5, 
+      name: "Fullstack Media Player", 
+      pictures: ["../../assets/spring-webscraper-streaming/swagger-ui.png","../../assets/spring-webscraper-streaming/mongo-db.png"], 
+      projectLink: "//github.com/vocaltech/android-streaming", 
+      livedemoLink: "",
+      summary: "Fullstack web app developed using Angular and Spring Boot", 
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+      tags: [Tag.ANGULAR, Tag.JAVA, Tag.TYPESCRIPT]}
   ];
 
 
