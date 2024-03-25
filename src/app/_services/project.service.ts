@@ -64,9 +64,9 @@ export class ProjectService {
     {
       id: 3, 
       name: "Fullstack Web Crawler", 
-      pictures: ["../../assets/image_1.png","../../assets/image_2.png","../../assets/image_3.png"], 
+      pictures: ["../../assets/ng-crawlers/screenshot-1a.png","../../assets/ng-crawlers/screenshot-1b.png","../../assets/ng-crawlers/screenshot-2.png","../../assets/ng-crawlers/screenshot-3a.png","../../assets/ng-crawlers/screenshot-3b.png"], 
       projectLink: "//www.github.com", 
-      livedemoLink: "",
+      livedemoLink: "https://ngcrawler.vocaltech.fr/myshopify",
       summary: "Fullstack web app developed using Angular and Node.js", 
       description: 
         `
