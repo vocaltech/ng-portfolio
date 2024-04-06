@@ -10,7 +10,7 @@ export class ProjectService {
     {
       id: 0, 
       name: "Android Geolocation App", 
-      pictures: ["../../assets/android_geolocation/screenshot-initial.png", "../../assets/android_geolocation/screenshot-pos-1.png", "../../assets/android_geolocation/screenshot-pos-2.png", "../../assets/android_geolocation/location-dev.png"], 
+      pictures: ["../../assets/android_geolocation/screenshot-1.png", "../../assets/android_geolocation/screenshot-2.png", "../../assets/android_geolocation/location-dev.png"], 
       projectLink: "//www.github.com", 
       livedemoLink: "",
       summary: "Mobile app to visualize real-time location on a map, send and retrieve datas from a remote server.", 
@@ -18,10 +18,10 @@ export class ProjectService {
         `
           <h5>Key features</h5>\
           <ul type='square'>\
-            <li><b>Real-Time Location Visualization:&nbsp;</b>the application offers users the ability to visualize their real-time position on a map interface (leafletjs), providing an intuitive and interactive experience</li>\
-            <li><b>AMQP Protocol Integration:&nbsp;</b>the application seamlessly sends location data to a RabbitMQ server.</li>\
-            <li><b>RESTful API Interaction:&nbsp;</b>the project uses a RESTful API for retrieving and deleting location data from the remote server.</li>\
-            <li><b>Android Studio Development:&nbsp;</b>The application is powered by Android Studio, the official Integrated Development Environment (IDE) for Android app development</li>\
+            <li><b>Real-Time Location Visualization:&nbsp;</b>the application offers users the ability to visualize their real-time position on a map interface (leafletjs), providing an intuitive and interactive experience.</li>\
+            <li><b>AMQP Protocol Integration:&nbsp;</b>the application seamlessly sends location data to a RabbitMQ backend server at a fixed interval of time.</li>\
+            <li><b>RESTful API Interaction:&nbsp;</b>the project consumes a RESTful API for retrieving and deleting location data from the backend server.</li>\
+            <li><b>Android Studio Development:&nbsp;</b>Powered by Android Studio, the official Integrated Development Environment (IDE) for Android application development.</li>\
           </ul>
         `, 
       tags: [Tag.JAVA, Tag.ANDROID, Tag.KOTLIN]
@@ -63,14 +63,22 @@ export class ProjectService {
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
     {
       id: 3, 
-      name: "Fullstack Web Crawler", 
+      name: "Fullstack Web Scraper", 
       pictures: ["../../assets/ng-crawlers/screenshot-1a.png","../../assets/ng-crawlers/screenshot-1b.png","../../assets/ng-crawlers/screenshot-2.png","../../assets/ng-crawlers/screenshot-3a.png","../../assets/ng-crawlers/screenshot-3b.png"], 
       projectLink: "//www.github.com", 
       livedemoLink: "https://ngcrawler.vocaltech.fr/myshopify",
-      summary: "Fullstack web app developed using Angular and Node.js", 
+      summary: "Powerful web scraper designed to simplify data extraction from the web. Results are available in CSV format for export.", 
       description: 
         `
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <h5>Key features</h5>\
+          <ul type='square'>\
+          <li><b>Fullstack Web Scraper:</b>&nbsp;This project offers comprehensive web scraping capabilities, allowing users to extract data from various websites with ease.</li>\
+          <li><b>Selective Page Scraping:</b>&nbsp;Users have the flexibility to choose specific pages from an online store for scraping, ensuring targeted data extraction tailored to their needs.</li>\
+          <li><b>Real-time Scraping Visualization:</b>&nbsp;Experience the scraping process in real-time with dynamic visualization, providing users with insights into the progress and status of their data extraction tasks.</li>\
+          <li><b>Interactive Results Display:</b>&nbsp;The extracted datas are presented in a user-friendly table format, enabling easy interpretation of the scraped information.</li>\
+          <li><b>CSV Export Functionality:</b>&nbsp;Seamlessly export scraping results into CSV files for further processing, sharing, or integration with other tools and platforms.</li>\
+          <li><b>Angular and Node.js Integration:</b>&nbsp;Our project is built using Angular for the frontend and Node.js for the backend, leveraging the power of these technologies to deliver a robust and efficient web scraping solution.</li>\
+          </ul>
         `
      , 
       tags: [Tag.ANGULAR, Tag.NODEJS, Tag.JAVASCRIPT]},
@@ -78,9 +86,22 @@ export class ProjectService {
       id: 4, 
       name: "Android Streaming App", 
       pictures: ["../../assets/android-streaming/screenshot-all-reduce.jpg", "../../assets/android-streaming/streaming-dev.png"], 
-      projectLink: "//www.github.com", summary: "Mobile app to playback an audio stream from url.", 
+      projectLink: "//www.github.com", 
       livedemoLink: "",
-      description: "<h2 style='color: red;'>Lorem ipsum</h2> dolor sit amet<br>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+      summary: "Mobile app to playback a streaming audio file from the internet. Realtime information display for the current media playing.", 
+      description: 
+        `
+          <h5>Key features</h5>\
+          <ul type='square'>\
+          <li><b>Audio Integration:</b>&nbsp;Seamlessly integrates audio playback functionality into an Android application.</li>\
+          <li><b>Basic Playback Functions:</b>&nbsp;Allows users to play, pause, and display track information effortlessly.</li>\
+          <li><b>Last Hour Playlist:</b>&nbsp;Displays the playlist of audio tracks played within the last hour for easy reference.</li>\
+          <li><b>Web Service Integration:</b>&nbsp;Retrieves metadatas from a web service for the current playing track, including artist, title, and album details.</li>\
+          <li><b>Media Notification:</b>&nbsp; Provides a media notification with playback controls and updated information for the current playing track.</li>\
+          <li><b>Background Playback:</b>&nbsp;Enables users to continue listening to audio content while using other applications or when the device is locked.</li>\
+          </ul>
+        `
+      , 
       tags: [Tag.ANDROID, Tag.KOTLIN]},
     {
       id: 5, 
