@@ -47,20 +47,14 @@ export class ProjectService {
     },
     {
       id: 2, 
-      name: "Angular Dashboard", 
-      pictures: ["../../assets/ng-dashboard/screenshot-1.png","../../assets/ng-dashboard/screenshot-2.png","../../assets/ng-dashboard/screenshot-3.png"], 
-      projectLink: "//www.github.com", 
-      livedemoLink: "https://ngdashboard.vocaltech.fr/",
-      summary: "Responsive Dashboard for an e-commerce website built with Angular and Material UI component library.", 
-      description: 
-        `
-          <h5>Key features</h5>\
-          <ul type='square'>\
-          <li><b>E-commerce Dashboard Frontend:&nbsp;</b>The dashboard offers a user-friendly interface designed to manage online store efficiently.&nbsp;It provides functionalities for order processing, customer management, and more, all accessible from a centralized location.</li>\
-          <li><b>Dashboard Analytics:&nbsp;</b>The analytics module delivers comprehensive insights into key metrics and performance indicators crucial for decision-making. The store owner is able to track information such as where customers come from to their online store, how their products sell, how traffic sources relate to sales, among other things.</li>\
-          </ul>
-        `, 
-      tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
+      name: "Fullstack Media Player", 
+      pictures: ["../../assets/ng-mediaplayer/live-playlist.png", "../../assets/ng-mediaplayer/data-explorer.png", "../../assets/spring-webscraper-streaming/swagger-ui.png","../../assets/spring-webscraper-streaming/mongo-db.png"], 
+      projectLink: "//github.com/vocaltech/android-streaming", 
+      livedemoLink: "https://mediaplayer.vocaltech.fr",
+      summary: "Web app to playback an Internet radio streaming file. Realtime information display for the current media playing.", 
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+      tags: [Tag.ANGULAR, Tag.JAVA, Tag.TYPESCRIPT]
+    },
     {
       id: 3, 
       name: "Fullstack Web Scraper", 
@@ -81,7 +75,8 @@ export class ProjectService {
           </ul>
         `
      , 
-      tags: [Tag.ANGULAR, Tag.NODEJS, Tag.JAVASCRIPT]},
+      tags: [Tag.ANGULAR, Tag.NODEJS, Tag.JAVASCRIPT]
+    },
     {
       id: 4, 
       name: "Android Streaming App", 
@@ -102,16 +97,25 @@ export class ProjectService {
           </ul>
         `
       , 
-      tags: [Tag.ANDROID, Tag.KOTLIN]},
+      tags: [Tag.ANDROID, Tag.KOTLIN]
+    },
     {
       id: 5, 
-      name: "Fullstack Media Player", 
-      pictures: ["../../assets/ng-mediaplayer/live-playlist.png", "../../assets/ng-mediaplayer/data-explorer.png", "../../assets/spring-webscraper-streaming/swagger-ui.png","../../assets/spring-webscraper-streaming/mongo-db.png"], 
-      projectLink: "//github.com/vocaltech/android-streaming", 
-      livedemoLink: "https://mediaplayer.vocaltech.fr",
-      summary: "Fullstack web app developed using Angular and Spring Boot", 
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
-      tags: [Tag.ANGULAR, Tag.JAVA, Tag.TYPESCRIPT]}
+      name: "Angular Dashboard", 
+      pictures: ["../../assets/ng-dashboard/screenshot-1.png","../../assets/ng-dashboard/screenshot-2.png","../../assets/ng-dashboard/screenshot-3.png"], 
+      projectLink: "//www.github.com", 
+      livedemoLink: "https://ngdashboard.vocaltech.fr/",
+      summary: "Responsive Dashboard for an e-commerce website built with Angular and Material UI component library.", 
+      description: 
+        `
+          <h5>Key features</h5>\
+          <ul type='square'>\
+          <li><b>E-commerce Dashboard Frontend:&nbsp;</b>The dashboard offers a user-friendly interface designed to manage online store efficiently.&nbsp;It provides functionalities for order processing, customer management, and more, all accessible from a centralized location.</li>\
+          <li><b>Dashboard Analytics:&nbsp;</b>The analytics module delivers comprehensive insights into key metrics and performance indicators crucial for decision-making. The store owner is able to track information such as where customers come from to their online store, how their products sell, how traffic sources relate to sales, among other things.</li>\
+          </ul>
+        `, 
+      tags: [Tag.ANGULAR, Tag.TYPESCRIPT]
+    }
   ];
 
 
