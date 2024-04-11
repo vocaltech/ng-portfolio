@@ -52,7 +52,19 @@ export class ProjectService {
       projectLink: "//github.com/vocaltech/android-streaming", 
       livedemoLink: "https://mediaplayer.vocaltech.fr",
       summary: "Web app to playback an Internet radio streaming file. Realtime information display for the current media playing.", 
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+      description:
+        `
+          <h5>Key features</h5>\
+          <ul type='square'>\
+            <li><b>Internet Radio Streaming Playback:</b>&nbsp;Our web application provides a seamless platform for users to playback their favorite internet radio streaming files.</li>\
+            <li><b>Media Player Functionality:</b>&nbsp;Enjoy basic media player functionality such as play, pause, and volume control, ensuring a tailored listening experience.</li>\
+            <li><b>Real-time Information Display:</b>&nbsp;Stay informed with real-time updates on the current media being played, including details on the artist, title, and album.</li>\
+            <li><b>Last Hour Playlist:</b>&nbsp;Access the playlist from the last hour, allowing users to rediscover recently played tracks or catch up on missed favorites.</li>\
+            <li><b>Saved Music Data Explorer:</b>&nbsp;Dive into an extensive exploration of saved music data, empowering users to discover new artists, albums, and tracks effortlessly.</li>\
+            <li><b>Fullstack project:</b>&nbsp;Spring Boot (backend) / Angular (front-end)</li>\
+          </ul>
+        `
+      , 
       tags: [Tag.ANGULAR, Tag.JAVA, Tag.TYPESCRIPT]
     },
     {
