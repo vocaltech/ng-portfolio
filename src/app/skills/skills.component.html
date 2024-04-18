@@ -7,23 +7,47 @@
                     <div class="col-sm-6">
                         <div class="card">
                             <div class="card-header">
-                                Frontend
+                                <div class="card-header-skill">
+                                  <b>Frontend</b>
+                                  <span class="badge" style="background-color: red;">Angular</span>
+                                  <span class="badge" style="background-color: lime;">Android</span>
+                                </div>
                             </div>
                             <div class="card-body">
-                            <h5 class="card-title">Angular - Android</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <p class="card-text">
+                                <tabset [vertical]="true" type="pills">
+                                  <tab heading="Foundations">
+                                    <div class="tab-content">HTML, CSS, Javascript</div>
+                                  </tab>
+                                  <tab heading="Angular Ecosystem">
+                                    <div class="tab-content">...</div>
+                                  </tab>
+                                  <tab heading="Android Ecosystem">
+                                    <div class="tab-content">...</div>
+                                  </tab>
+                                </tabset>
+                              </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="card">
                             <div class="card-header">
-                                Backend
+                              <div class="card-header-skill">
+                                <b>Backend</b>
+                                <span class="badge" style="background-color: orange;">Java</span>
+                                <span class="badge" style="background-color: green;">Nodejs</span>
+                              </div>
                             </div>
                             <div class="card-body">
-                              <h5 class="card-title">Java - Node.js</h5>
                               <p class="card-text">
                                 <tabset [vertical]="true" type="pills">
+                                  <tab heading="Java Ecosystem">
+                                    <div class="tab-content">...</div>
+                                  </tab>
+                                  <tab heading="Nodejs Ecosystem">
+                                    <div class="tab-content">...</div>
+                                  </tab>
                                   <tab heading="API Protocols">
                                     <div class="tab-content">REST, SSE, AMQP</div>
                                   </tab>
@@ -38,6 +62,14 @@
                                   </tab>
                                 </tabset>
                               </p>
+
+
+
+
+
+
+
+
                             </div>
                         </div>
                     </div>
