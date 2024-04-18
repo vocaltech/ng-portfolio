@@ -4,3 +4,9 @@
     color: gray;
     font-weight: bold;
 }
+
+.card-header-skill {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+}
