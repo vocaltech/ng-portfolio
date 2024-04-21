@@ -10,3 +10,11 @@
     justify-content: flex-start;
     gap: 8px;
 }
+
+.card {
+    margin-top: 8px;
+}
+
+.card-content-skill {
+    font-size: 14px;
+}
