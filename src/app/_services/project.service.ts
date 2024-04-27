@@ -117,13 +117,14 @@ export class ProjectService {
       pictures: ["../../assets/ng-dashboard/screenshot-1.png","../../assets/ng-dashboard/screenshot-2.png","../../assets/ng-dashboard/screenshot-3.png"], 
       projectLink: "//www.github.com", 
       livedemoLink: "https://ngdashboard.vocaltech.fr/",
-      summary: "Responsive Dashboard for an e-commerce website built with Angular and Material UI component library.", 
+      summary: "Responsive Dashboard for an e-commerce website built upon Angular Core and Angular Material components.", 
       description: 
         `
           <h5>Key features</h5>\
           <ul type='square'>\
           <li><b>E-commerce Dashboard Frontend:&nbsp;</b>The dashboard offers a user-friendly interface designed to manage online store efficiently.&nbsp;It provides functionalities for order processing, customer management, and more, all accessible from a centralized location.</li>\
           <li><b>Dashboard Analytics:&nbsp;</b>The analytics module delivers comprehensive insights into key metrics and performance indicators crucial for decision-making. The store owner is able to track information such as where customers come from to their online store, how their products sell, how traffic sources relate to sales, among other things.</li>\
+          <li><b>UI Design:&nbsp;</b>The dashboard is built upon Angular Core, Angular Material Design components and Charts.js for charting library (ng2-charts)</li>\
           </ul>
         `, 
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT]
