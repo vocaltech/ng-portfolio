@@ -14,7 +14,9 @@ import { AccordionModule } from 'ngx-bootstrap/accordion'
   styleUrl: './resume.component.css'
 })
 export class ResumeComponent {
-  isWorkExperienceAccordionOpened: boolean = true
+  isSkillsOpened = false
+  isWorksOpened = false
+  isEducationOpened = false
 
   constructor(private titleService: Title, private renderer: Renderer2) {
     this.titleService.setTitle("Vocaltech - Resume")
