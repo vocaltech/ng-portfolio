@@ -1,22 +1,34 @@
 <div class="container">
-    <button class="btn btn-primary shadow border mb-5" (click)="downloadPdfResume()">Download PDF</button>
+    <button class="btn btn-primary shadow border mb-5" disabled (click)="downloadPdfResume()">Download PDF</button>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <b>Atouts</b>
+        </div>
+        <div class="card-body">
+            <h5>Mindset orient&eacute; Produit et Satisfaction Client</h5>
+            <h5>Capacit&eacute; &agrave; la r&eacute;solution de probl&egrave;mes et d&eacute;boguage</h5>
+            <h5>Capacit&eacute; d'Ecoute et d’Adaptation</h5>
+            <h5>Aisance relationnelle, Autonomie avec esprit d’&eacute;quipe</h5> 
+        </div>
+    </div>
 
     <div class="pb-2">
         <accordion [isAnimated]="true" [closeOthers]="true" class="shadow">
-            <accordion-group panelClass="customClass" [(isOpen)]="isWorkExperienceAccordionOpened">
+            <accordion-group panelClass="customClass" [(isOpen)]="isSkillsOpened">
                 <button
                     id="panel-heading"
                     class="btn btn-link btn-block justify-content-between d-flex w-100  shadow-none"
                     accordion-heading
                     type="button">
-                    <div class="pull-left float-left">Experiences pro</div>
+                    <div class="pull-left float-left">Comp&eacute;tences et Savoir-Faire</div>
                     <!--<span class="badge badge-secondary bg-secondary float-right pull-right">Some HTML here</span>-->
-                    <span style="color: white;" *ngIf="!isWorkExperienceAccordionOpened">
+                    <span style="color: white;" *ngIf="!isSkillsOpened">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                             <path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z" fill="white"/>
                         </svg>
                     </span>
-                    <span style="color: white;" *ngIf="isWorkExperienceAccordionOpened">
+                    <span style="color: white;" *ngIf="isSkillsOpened">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                             <path d="m296-345-56-56 240-240 240 240-56 56-184-184-184 184Z" fill="white"/>
                         </svg>
@@ -24,38 +36,103 @@
                 </button>
     
                 <div style="text-align: left;">
-                    <h2 class="mb-0">Software Eng.</h2>
-                    <h3 class="text-primary">Valoris Inc</h3>
-                    <ul>
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                        <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
-                        <li>, when an unknown printer took a galley of type</li> 
-                        <li>and scrambled it to make a type specimen book.</li>
-                    </ul>
-                </div>
-                <hr>
-                <div style="text-align: left;">
-                    <h2 class="mb-0">Manager.</h2>
-                    <h3 class="text-primary">Atos Inc</h3>
-                    <ul>
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                        <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
-                        <li>, when an unknown printer took a galley of type</li> 
-                        <li>and scrambled it to make a type specimen book.</li>
+                    <ul type="square">
+                        <li>Intervenir sur l'ensemble du cycle de vie d'une US, de la discovery au d&eacute;ploiement</li>
+                        <li>Connaissance des bonnes pratiques de d&eacute;veloppement : design patterns, testing, qualit&eacute; de code</li>
+                        <li>Capacit&eacute; &agrave; proposer/challenger des solutions techniques</li>
+                        <li>Capacit&eacute; &agrave; assurer la veille technologique et le support sur un composant sp&eacute;cifique</li>
+                        <li>Anglais technique lu et &eacute;crit</li>
                     </ul>
                 </div>
             </accordion-group>
-    
-            <accordion-group panelClass="customClass">
+
+            <accordion-group panelClass="customClass" [(isOpen)]="isWorksOpened">
                 <button
-                id="panel-heading"
-                class="btn btn-link btn-block justify-content-between d-flex w-100  shadow-none"
-                accordion-heading type="button">
-                <div class="pull-left float-left">Education</div>
-                <span class="badge badge-secondary bg-secondary float-right pull-right">Some HTML here</span>
-                <!--<span class="glyphicon glyphicon-chevron-up float-right pull-right"></span>-->
-            </button>
-            This is just some content to illustrate fancy headings.
+                    id="panel-heading"
+                    class="btn btn-link btn-block justify-content-between d-flex w-100  shadow-none"
+                    accordion-heading
+                    type="button">
+                    <div class="pull-left float-left">Dynamique Professionnelle</div>
+                    <!--<span class="badge badge-secondary bg-secondary float-right pull-right">Some HTML here</span>-->
+                    <span style="color: white;" *ngIf="!isWorksOpened">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z" fill="white"/>
+                        </svg>
+                    </span>
+                    <span style="color: white;" *ngIf="isWorksOpened">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path d="m296-345-56-56 240-240 240 240-56 56-184-184-184 184Z" fill="white"/>
+                        </svg>
+                    </span>
+                </button>
+
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <div><h4>T&eacute;l&eacute;vendeur</h4></div>
+                    <div><h4 class="text-primary">PRO DIRECT SERVICES</h4></div>
+                    <div><h4>Depuis 2015</h4></div>
+                </div>
+    
+                <div style="text-align: left;">
+                    <ul type="square">
+                        <li>Vente par t&eacute;l&eacute;phone de produits bancaires vers une cible B2C</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <div><h4>Technico-Commercial</h4></div>
+                    <div><h4 class="text-primary">SOCIETE PARISIENNE TELECOMS</h4></div>
+                    <div><h4>2010-2015</h4></div>
+                </div>
+    
+                <div style="text-align: left;">
+                    <ul type="square">
+                        <li>Vente de produits et services t&eacute;l&eacute;coms vers une cible de Grands Comptes</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <div><h4>Commercial S&eacute;dentaire</h4></div>
+                    <div><h4 class="text-primary">DISTRIBUTEUR IT</h4></div>
+                    <div><h4>1999-2010</h4></div>
+                </div>
+    
+                <div style="text-align: left;">
+                    <ul type="square">
+                        <li>D&eacute;veloppement et animation d’un r&eacute;seau de +100 distributeurs, sp&eacute;cialis&eacute;s en informatique de sant&eacute;</li>
+                    </ul>
+                </div>
+                
+            </accordion-group>
+    
+            <accordion-group panelClass="customClass" [(isOpen)]="isEducationOpened">
+                <button
+                    id="panel-heading"
+                    class="btn btn-link btn-block justify-content-between d-flex w-100  shadow-none"
+                    accordion-heading
+                    type="button">
+                    <div class="pull-left float-left">Diplomes et Formations</div>
+                    <!--<span class="badge badge-secondary bg-secondary float-right pull-right">Some HTML here</span>-->
+                    <span style="color: white;" *ngIf="!isEducationOpened">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z" fill="white"/>
+                        </svg>
+                    </span>
+                    <span style="color: white;" *ngIf="isEducationOpened">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path d="m296-345-56-56 240-240 240 240-56 56-184-184-184 184Z" fill="white"/>
+                        </svg>
+                    </span>
+                </button>
+    
+                <div style="text-align: left;">
+                    <ul type="square">
+                        <li>Licence d’Ing&eacute;nierie Electrique (ENSET Cachan)</li>
+                        <li>G&eacute;nie Electrique et Informatique Industrielle (IUT Cachan)</li>
+                        <li>Baccalaur&eacute;at C</li>
+                    </ul>
+                </div>
             </accordion-group>
         </accordion>
     </div>
