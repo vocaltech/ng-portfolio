@@ -29,7 +29,7 @@ export class ProjectService {
     {
       id: 1, 
       name: "Spring Boot Geolocation API", 
-      pictures: ["../../assets/spring-geolocation/swagger-ui.png","../../assets/spring-geolocation/mongodb-compass.png","../../assets/spring-geolocation/rabbitmq-admin-1.png", "../../assets/spring-geolocation/rabbitmq-admin-2.png", "../../assets/spring-geolocation/rabbitmq-admin-3.png"], 
+      pictures: ["../../assets/spring-geolocation/mongodb-compass.png","../../assets/spring-geolocation/rabbitmq-admin-1.png", "../../assets/spring-geolocation/rabbitmq-admin-2.png", "../../assets/spring-geolocation/rabbitmq-admin-3.png"], 
       projectLink: "//www.github.com", 
       livedemoLink: "",
       summary: "Backend for Android Geolocation App. Restful API for retrieving and deleting user positions.", 
