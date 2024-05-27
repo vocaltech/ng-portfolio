@@ -11,7 +11,7 @@ export class ProjectService {
       id: 0, 
       name: "Android Geolocation App", 
       pictures: ["../../assets/android_geolocation/screenshot-1.png", "../../assets/android_geolocation/screenshot-2.png", "../../assets/android_geolocation/location-dev.png"], 
-      projectLink: "//www.github.com", 
+      projectLink: "https://github.com/vocaltech/android-geolocation", 
       livedemoLink: "",
       summary: "Mobile app to visualize real-time location on a map, send and retrieve datas from a remote server.", 
       description: 
