@@ -3,8 +3,10 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-                sh 'node -v'
-                sh 'npm -v'
+                echo "Building.."
+                sh '''
+                    echo "doing build stuff.."
+                '''
             }
         }
     }
