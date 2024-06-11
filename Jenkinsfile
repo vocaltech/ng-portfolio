@@ -39,6 +39,7 @@ pipeline {
                     remote.allowAnyHosts = true
                     sshPut remote: remote, from: './dist/ng-portfolio/browser/.', into: './target'
                     sshCommand remote: remote, command: "mv ./target/browser/* ./target"
+                    sshCommand remote: remote, command: "rm -rf ./target/browser"
                 }
             }
         }
