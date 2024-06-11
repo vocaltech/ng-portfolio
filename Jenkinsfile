@@ -26,7 +26,7 @@ pipeline {
         */
         stage("Deploy Install") {
             environment {
-                SERVICE_CREDS = credentials('7a7b2afd-24e3-4743-b007-b81697a1db5c')
+                SERVICE_CREDS = credentials('9f479037-e993-420d-87bd-64168cf2f1ef')
             }
             steps {
                 echo "Deploy Installing..."
@@ -37,9 +37,9 @@ pipeline {
                     remote.user = "${SERVICE_CREDS_USR}"
                     remote.password = "${SERVICE_CREDS_PSW}"
                     remote.allowAnyHosts = true
-                    sshPut remote: remote, from: './dist/ng-portfolio/browser/.', into: './target'
-                    sshCommand remote: remote, command: "mv ./target/browser/* ./target"
-                    sshCommand remote: remote, command: "rm -rf ./target/browser"
+                    sshPut remote: remote, from: './dist/ng-portfolio/browser/.', into: '/var/www/vocaltech.fr/html'
+                    #sshCommand remote: remote, command: "mv ./target/browser/* ./target"
+                    #sshCommand remote: remote, command: "rm -rf ./target/browser"
                 }
             }
         }
