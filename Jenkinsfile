@@ -1,11 +1,16 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'node:lts-bullseye-slim'
+        }
+    }
     stages {
         stage("Build") {
             steps {
                 echo "Building.."
                 sh '''
-                    echo "doing build stuff.."
+                    npm install
+                    npm run build
                 '''
             }
         }
