@@ -32,12 +32,12 @@ pipeline {
                 echo "Deploy Installing..."
                 script {
                     def remote = [:]
-                    remote.name = 'target'
+                    remote.name = "${SSH_HOSTINGER_HOSTNAME}"
                     remote.host = "${SSH_HOSTINGER_HOSTNAME}"
                     remote.user = "${SERVICE_CREDS_USR}"
                     remote.password = "${SERVICE_CREDS_PSW}"
                     remote.allowAnyHosts = true
-                    sshPut remote: remote, from: './dist/ng-portfolio/browser/.', into: './' + remote.name
+                    sshPut remote: remote, from: './dist/ng-portfolio/browser/', into: './target'
                 }
             }
         }
