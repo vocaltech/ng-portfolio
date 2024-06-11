@@ -38,8 +38,8 @@ pipeline {
                     remote.password = "${SERVICE_CREDS_PSW}"
                     remote.allowAnyHosts = true
                     sshPut remote: remote, from: './dist/ng-portfolio/browser/.', into: '/var/www/vocaltech.fr/html'
-                    #sshCommand remote: remote, command: "mv ./target/browser/* ./target"
-                    #sshCommand remote: remote, command: "rm -rf ./target/browser"
+                    //sshCommand remote: remote, command: "mv ./target/browser/* ./target"
+                    //sshCommand remote: remote, command: "rm -rf ./target/browser"
                 }
             }
         }
