@@ -37,7 +37,8 @@ pipeline {
                     remote.user = "${SERVICE_CREDS_USR}"
                     remote.password = "${SERVICE_CREDS_PSW}"
                     remote.allowAnyHosts = true
-                    sshPut remote: remote, from: './dist/ng-portfolio/browser/', into: './target'
+                    sshPut remote: remote, from: './dist/ng-portfolio/browser/.', into: './target'
+                    sshCommand remote: remote, command: "mv ./target/browser/* ./target"
                 }
             }
         }
