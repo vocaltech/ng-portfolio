@@ -5,7 +5,6 @@ pipeline {
         }
     }
     stages {
-        /* 
         stage("Build") {
             steps {
                 echo "Building.."
@@ -15,6 +14,7 @@ pipeline {
                 '''
             }
         }
+        /* 
         stage("Deploy Clean") {
             steps {
                 echo "Deploy Cleaning..."
